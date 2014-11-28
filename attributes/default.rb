@@ -15,7 +15,7 @@ default[:couchpotato][:settings] = {
   library: [],
   nzbs_api_key: 'nzbz_api_key',
   password: 'encrypted-password',
-  port: 3002,
+  port: 5000,
   preferred_words: '',
   sabnzbd_api_key: 'sabnzbd_api_key',
   sabnzbd_url: 'https://localhost:9090',
