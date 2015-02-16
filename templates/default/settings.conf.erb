@@ -355,6 +355,9 @@ enabled = 0
 on_snatch = 0
 clients = 
 media_server = localhost
+username = 
+auth_token = 
+password = 
 
 [prowl]
 priority = 0
@@ -424,6 +427,7 @@ default_file_action = move
 unrar_path = 
 unrar_modify_date = False
 check_space = True
+replace_doubles = True
 
 [searcher]
 ignored_words = <%= @ignored_words %>
@@ -483,6 +487,7 @@ extra_score = 0
 passkey = 
 seed_time = 40
 seed_ratio = 1
+internal_only = False
 
 [torrentbytes]
 username = 
@@ -652,4 +657,41 @@ meta_enabled = False
 
 [torrent]
 minimum_seeders = 1
+
+[hadouken]
+host = localhost:7890
+api_key = 
+enabled = 0
+label = 
+
+[putio]
+delete_file = 0
+callback_host = 
+download_dir = 
+manual = 0
+enabled = 0
+oauth_token = 
+download = 0
+folder = 0
+
+[webhook]
+url = 
+on_snatch = 0
+enabled = 0
+
+[hdaccess]
+username = 
+apikey = 
+seed_time = 0
+extra_score = 0
+enabled = False
+internal_only = False
+prefer_internal = 1
+seed_ratio = 0
+
+[crowdai]
+automation_enabled = False
+number_grabs = 500
+automation_urls_use = 1
+automation_urls = http://YOUR_PROVIDER/rss?t=THE_MOVIE_CATEGORY&i=YOUR_USER_ID&r=YOUR_API_KEY&res=2&rls=2&num=100
 
