@@ -3,6 +3,10 @@ couchpotato cookbook CHANGELOG
 
 This file is used to list changes made in each version of the couchpotato cookbook.
 
+1.0.5
+-----
+* Updates settings.conf for 63560efedb7bd2b870b783d3bbfe8af5ee2e5c3e
+
 1.0.4
 ----
 * Updates settings.conf for c295b344fac598431f03cba161f26eb61dc0c783
