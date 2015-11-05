@@ -24,8 +24,8 @@ git node[:couchpotato][:install_dir] do
   repository node[:couchpotato][:git_url]
   reference node[:couchpotato][:git_ref]
   action :checkout
-  checkout_branch(node[:sickbeard][:git_ref]) unless node[:sickbeard][:git_ref] == 'master'
-  enable_checkout node[:sickbeard][:git_ref] != 'master'
+  checkout_branch(node[:couchpotato][:git_ref]) unless node[:couchpotato][:git_ref] == 'master'
+  enable_checkout node[:couchpotato][:git_ref] != 'master'
   user node[:couchpotato][:user]
   group node[:couchpotato][:group]
   notifies :restart, 'service[couchpotato]'
