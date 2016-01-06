@@ -233,7 +233,7 @@ seed_ratio = 1
 [blackhole]
 directory = <%= @directory %>
 manual = 0
-enabled = True
+enabled = <%= @blackhole_enabled %>
 use_for = torrent
 create_subdir = 0
 
@@ -283,14 +283,14 @@ use_for = both
 destination = 
 
 [transmission]
-username = 
+username = <%= @transmission_username %>
 ratio = 10
 manual = 0
-enabled = 0
+enabled = <%= @transmission_enabled %>
 paused = False
 host = <%= @transmission_url %>
 directory = 
-password = 
+password = <%= @transmission_password %>
 ratiomode = 0
 stalled_as_failed = True
 delete_failed = True
@@ -362,7 +362,7 @@ on_snatch = 0
 
 [plex]
 host = localhost
-enabled = 0
+enabled = <%= @plex_enabled %>
 on_snatch = 0
 clients = 
 media_server = localhost
@@ -776,7 +776,7 @@ meta_enabled = False
 meta_nfo = True
 
 [suggestion]
-enabled = True
+enabled = <%= @suggestion_enabled %>
 
 [telegrambot]
 bot_token = 
