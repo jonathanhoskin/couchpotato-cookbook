@@ -61,6 +61,7 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
     twitter_access_token_key: node[:couchpotato][:settings][:twitter_access_token_key],
     twitter_access_token_secret: node[:couchpotato][:settings][:twitter_access_token_secret],
     twitter_username: node[:couchpotato][:settings][:twitter_username],
+    urlbase: node[:couchpotato][:settings][:urlbase],
     username: node[:couchpotato][:settings][:username]
   )
   notifies :restart, 'service[couchpotato]'
