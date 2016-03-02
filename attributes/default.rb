@@ -32,6 +32,6 @@ default[:couchpotato][:settings] = {
   twitter_access_token_key: nil,
   twitter_access_token_secret: nil,
   twitter_username: nil,
-  urlbase: '',
+  url_base: '',
   username: 'username'
 }
