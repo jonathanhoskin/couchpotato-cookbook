@@ -60,6 +60,7 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
     transmission_username: node[:couchpotato][:settings][:transmission_username],
     twitter_access_token_key: node[:couchpotato][:settings][:twitter_access_token_key],
     twitter_access_token_secret: node[:couchpotato][:settings][:twitter_access_token_secret],
+    twitter_enabled: node[:couchpotato][:settings][:twitter_enabled],
     twitter_username: node[:couchpotato][:settings][:twitter_username],
     url_base: node[:couchpotato][:settings][:url_base],
     username: node[:couchpotato][:settings][:username]

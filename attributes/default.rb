@@ -31,6 +31,7 @@ default[:couchpotato][:settings] = {
   transmission_url: 'http://localhost:9091',
   twitter_access_token_key: nil,
   twitter_access_token_secret: nil,
+  twitter_enabled: 0,
   twitter_username: nil,
   url_base: nil,
   username: 'username'
