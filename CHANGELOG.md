@@ -3,6 +3,21 @@ couchpotato cookbook CHANGELOG
 
 This file is used to list changes made in each version of the couchpotato cookbook.
 
+1.0.8
+-----
+* Adds configuration options for `url_base`, `twitter.enabled`, `rarbg.enabled` and `webhook`
+* Updates to new git remote
+* Updates settings.conf for c4fad95cd24bffd814572e8fd08c4f2f5d14f59b
+
+1.0.7
+-----
+* Adds some more settings to node attributes
+* Updates settings.conf for de141aae1614d27caf81bf0a211592510b737f11
+
+1.0.6
+-----
+* Fixes git configuration node attributes scope
+
 1.0.5
 -----
 * Updates settings.conf for 63560efedb7bd2b870b783d3bbfe8af5ee2e5c3e
