@@ -19,6 +19,7 @@ default[:couchpotato][:settings] = {
   plex_enabled: 0,
   port: 5000,
   preferred_words: '',
+  rarbg_enabled: 0,
   sabnzbd_api_key: 'sabnzbd_api_key',
   sabnzbd_url: 'https://localhost:9090',
   ssl_cert: '',

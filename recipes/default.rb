@@ -47,6 +47,7 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
     plex_enabled: node[:couchpotato][:settings][:plex_enabled],
     port: node[:couchpotato][:settings][:port],
     preferred_words: node[:couchpotato][:settings][:preferred_words],
+    rarbg_enabled: node[:couchpotato][:settings][:rarbg_enabled],
     sabnzbd_api_key: node[:couchpotato][:settings][:sabnzbd_api_key],
     sabnzbd_url: node[:couchpotato][:settings][:sabnzbd_url],
     sabnzbd_ssl: node[:couchpotato][:settings][:sabnzbd_ssl],
