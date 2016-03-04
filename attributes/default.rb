@@ -35,5 +35,8 @@ default[:couchpotato][:settings] = {
   twitter_enabled: 0,
   twitter_username: nil,
   url_base: nil,
-  username: 'username'
+  username: 'username',
+  webhook_enabled: 0,
+  webhook_on_snatch: 0,
+  webhook_url: nil
 }

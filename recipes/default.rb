@@ -64,7 +64,10 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
     twitter_enabled: node[:couchpotato][:settings][:twitter_enabled],
     twitter_username: node[:couchpotato][:settings][:twitter_username],
     url_base: node[:couchpotato][:settings][:url_base],
-    username: node[:couchpotato][:settings][:username]
+    username: node[:couchpotato][:settings][:username],
+    webhook_enabled: node[:couchpotato][:settings][:webhook_enabled],
+    webhook_on_snatch: node[:couchpotato][:settings][:webhook_on_snatch],
+    webhook_url: node[:couchpotato][:settings][:webhook_url]
   )
   notifies :restart, 'service[couchpotato]'
 end
