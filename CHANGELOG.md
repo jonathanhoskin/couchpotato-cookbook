@@ -3,6 +3,10 @@ couchpotato cookbook CHANGELOG
 
 This file is used to list changes made in each version of the couchpotato cookbook.
 
+1.0.9
+-----
+* Fixes version in metadata
+
 1.0.8
 -----
 * Adds configuration options for `url_base`, `twitter.enabled`, `rarbg.enabled` and `webhook`
