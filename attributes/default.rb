@@ -4,7 +4,7 @@ default[:couchpotato][:group] = 'couchpotato'
 default[:couchpotato][:install_dir] = '/srv/apps/couchpotato'
 default[:couchpotato][:config_dir] = '/etc/couchpotato'
 
-default[:couchpotato][:git_url] = 'https://github.com/RuudBurger/CouchPotatoServer.git'
+default[:couchpotato][:git_url] = 'https://github.com/CouchPotato/CouchPotatoServer.git'
 default[:couchpotato][:git_ref] = 'master'
 
 default[:couchpotato][:settings] = {
