@@ -44,6 +44,8 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
     library: node[:couchpotato][:settings][:library],
     nzbs_api_key: node[:couchpotato][:settings][:nzbs_api_key],
     password: node[:couchpotato][:settings][:password],
+    permission_file: node[:couchpotato][:settings][:permission_file],
+    permission_folder: node[:couchpotato][:settings][:permission_folder],
     plex_enabled: node[:couchpotato][:settings][:plex_enabled],
     port: node[:couchpotato][:settings][:port],
     preferred_words: node[:couchpotato][:settings][:preferred_words],

@@ -16,6 +16,8 @@ default[:couchpotato][:settings] = {
   library: [],
   nzbs_api_key: 'nzbz_api_key',
   password: 'encrypted-password',
+  permission_file: '0755',
+  permission_folder: '0755',
   plex_enabled: 0,
   port: 5000,
   preferred_words: '',
