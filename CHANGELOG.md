@@ -3,6 +3,10 @@ couchpotato cookbook CHANGELOG
 
 This file is used to list changes made in each version of the couchpotato cookbook.
 
+1.0.11
+------
+* Makes various settings configurable
+
 1.0.10
 ------
 * Makes permission_file and permission_folder configurable
