@@ -40,8 +40,8 @@ automation_enabled = False
 automation_username = 
 
 [imdb]
-automation_enabled = 1
-automation_urls_use = 1
+automation_enabled = <%= @imdb_automation_enabled %>
+automation_urls_use = <%= @imdb_automation_urls_use %>
 automation_urls = <%= @imdb_watchlist %>
 automation_charts_top250 = True
 automation_providers_enabled = False
@@ -134,7 +134,7 @@ extra_score = 0
 [newznab]
 use = 1
 api_key = <%= @nzbs_api_key %>
-enabled = 1
+enabled = <%= @newznab_enabled %>
 host = nzbs.org
 extra_score = 0
 custom_tag = ,,,,,
@@ -273,7 +273,7 @@ manual = False
 host = <%= @sabnzbd_url %>
 api_key = <%= @sabnzbd_api_key %>
 priority = 0
-remove_complete = False
+remove_complete = <%= @sabnzbd_remove_complete %>
 ssl = <%= @sabnzbd_ssl || 0 %>
 
 [synology]
@@ -292,7 +292,7 @@ manual = 0
 enabled = <%= @transmission_enabled %>
 paused = False
 host = <%= @transmission_url %>
-directory = 
+directory = <%= @transmission_directory %>
 password = <%= @transmission_password %>
 ratiomode = 0
 stalled_as_failed = True
@@ -420,23 +420,23 @@ startup_scan = True
 library_refresh_interval = 0
 
 [renamer]
-nfo_name = <filename>.orig.<ext>
-from = 
+nfo_name = <%= @renamer_nfo_name %>
+from = <%= @renamer_from %>
 force_every = 2
 move_leftover = False
-file_name = <thename><cd>.<ext>
-enabled = False
+file_name = <%= @renamer_file_name %>
+enabled = <%= @renamer_enabled %>
 next_on_failed = True
-to = 
-rename_nfo = True
-cleanup = False
-separator = 
-folder_name = <namethe> (<year>)
+to = <%= @renamer_to %>
+rename_nfo = <%= @renamer_rename_nfo %>
+cleanup = <%= @renamer_cleanup %>
+separator = <%= @renamer_separator %>
+folder_name = <%= @renamer_folder_name %>
 run_every = 1
 ntfs_permission = False
 file_action = move
 unrar = False
-foldersep = 
+foldersep = <%= @renamer_foldersep %>
 default_file_action = move
 unrar_path = 
 unrar_modify_date = False
@@ -446,7 +446,7 @@ remove_lower_quality_copies = True
 
 [searcher]
 ignored_words = <%= @ignored_words %>
-preferred_method = nzb
+preferred_method = <%= @searcher_preferred_method %>
 preferred_words = <%= @preferred_words %>
 required_words = 
 
@@ -454,9 +454,9 @@ required_words =
 retention = 1000
 
 [subtitle]
-languages = 
-enabled = 0
-force = False
+languages = <%= @subtitle_languages %>
+enabled = <%= @subtitle_enabled %>
+force = <%= @subtitle_force %>
 
 [trailer]
 quality = 720p
@@ -754,7 +754,7 @@ min_leechers = 0
 enabled = <%= @rarbg_enabled %>
 ranked_only = 1
 extra_score = 0
-min_seeders = 10
+min_seeders = <%= @rarbg_min_seeders %>
 
 [scenetime]
 username = 
