@@ -38,6 +38,7 @@ template ::File.join(node[:couchpotato][:config_dir], 'settings.conf') do
   variables(
     api_key: node[:couchpotato][:settings][:api_key],
     blackhole_enabled: node[:couchpotato][:settings][:blackhole_enabled],
+    debug: node[:couchpotato][:settings][:debug],
     directory: node[:couchpotato][:settings][:directory],
     ignored_words: node[:couchpotato][:settings][:ignored_words],
     imdb_automation_enabled: node[:couchpotato][:settings][:imdb_automation_enabled],

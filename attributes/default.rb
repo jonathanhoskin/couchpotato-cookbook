@@ -10,6 +10,7 @@ default[:couchpotato][:git_ref] = 'master'
 default[:couchpotato][:settings] = {
   api_key: 'api_key',
   blackhole_enabled: 1,
+  debug: 0,
   directory: '/usr/data/downloads',
   ignored_words: '',
   imdb_automation_enabled: 1,
