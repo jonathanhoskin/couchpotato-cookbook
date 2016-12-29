@@ -371,9 +371,9 @@ enabled = <%= @plex_enabled %>
 on_snatch = 0
 clients = 
 media_server = localhost
-username = 
-auth_token = 
-password = 
+username = <%= @plex_username %>
+auth_token = <%= @plex_auth_token %>
+password = <% @plex_password %>
 
 [prowl]
 priority = 0
