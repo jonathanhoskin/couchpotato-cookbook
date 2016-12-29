@@ -3,6 +3,11 @@ couchpotato cookbook CHANGELOG
 
 This file is used to list changes made in each version of the couchpotato cookbook.
 
+1.0.13
+------
+* Adds a missing config option to settings.conf for b538f9a08db9a0be1af2f298727834edeafa322e
+* Adds configuration options for plex authentication
+
 1.0.12
 ------
 * Updates settings.conf for b538f9a08db9a0be1af2f298727834edeafa322e

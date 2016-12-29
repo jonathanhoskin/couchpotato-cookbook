@@ -3,7 +3,7 @@ maintainer        'Jeroen Jacobs'
 maintainer_email  'chef@jeroenj.be'
 license           'MIT'
 description       'Installs CouchPotato.'
-version           '1.0.12'
+version           '1.0.13'
 
 depends           'git'
 depends           'python'
