@@ -44,6 +44,8 @@ default[:couchpotato][:settings] = {
   sabnzbd_remove_complete: 0,
   sabnzbd_url: 'https://localhost:9090',
   searcher_preferred_method: 'nzb',
+  smtp_enabled: 0,
+  smtp_port: 25,
   subtitle_enabled: 0,
   subtitle_force: 0,
   subtitle_languages: '',

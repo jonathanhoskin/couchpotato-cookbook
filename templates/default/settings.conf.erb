@@ -321,16 +321,16 @@ enabled = 0
 email = 
 
 [email]
-smtp_pass = 
+smtp_pass = <%= @smtp_pass %>
 on_snatch = 0
-from = 
-to = 
-enabled = 0
-smtp_server = 
-smtp_user = 
+from = <%= @smtp_from %>
+to = <%= @smtp_to %>
+enabled = <%= @smtp_enabled %>
+smtp_server = <%= @smtp_server %>
+smtp_user = <%= @smtp_user %>
 ssl = 0
 starttls = 0
-smtp_port = 25
+smtp_port = <%= @smtp_port %>
 
 [growl]
 password = 
